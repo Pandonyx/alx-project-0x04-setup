@@ -16,7 +16,7 @@ export const CountProvider = ({ children }: { children: ReactNode}) => {
   const decrement = () => setCount((count) => count > 0 ? count - 1 : 0)
 
   return (
-    <CountContext.Provider value={{ count, increment, decrement }}>
+    <CountContext.Provider value={{ count, increment, decrement }}> 
       {children}
     </CountContext.Provider>
   )
